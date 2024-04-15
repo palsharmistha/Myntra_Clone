@@ -1,0 +1,113 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 20px;
+}
+
+body {
+  margin: 10px;
+}
+#demo {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+a.nav-link {
+  font-weight: bold; 
+}
+
+
+h2{
+  font-weight: bold;
+}
+
+.crd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* To add space between images */
+}
+
+.crd > div {
+  flex-basis: calc(16.66% - 10px); /* 16.66% for 6 columns, subtracting 10px for space */
+  margin-bottom: 20px; /* Adjust the space between rows as needed */
+}
+
+.crd > div > img {
+  width: 100%; /* Ensure images fill their containers */
+  display: block; /* Prevent whitespace beneath images */
+}
+.des {
+  font-size: small; /* Adjust font size as needed */
+  color: #333; /* Set text color */
+  font-family: Arial, sans-serif; /* Define font family */
+  line-height: 1.5; /* Set line height */
+  /* Add more CSS styles as needed */
+}
+.card {
+  text-align: center; /* Center-align the content */
+}
+.product-details {
+  text-align: center; /* Center-align the content */
+}
+.product-price {
+  margin-top: 10px;
+}
+
+.new-price {
+  color: #009688; /* Change the color as needed */
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.old-price {
+  color: #999; /* Change the color as needed */
+  text-decoration: line-through; /* Add strike-through effect */
+  font-size: 16px; /* Adjust font size as needed */
+}
+.mybtn1, 
+  .mybtn2{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 12px 36px;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    align-items: center;
+    font-weight: bol;
+  }
+  .mybtn1{
+    background-color: #ffffff;
+  }
+  .mybtn2{
+    color: #ffffff;
+  }
+  .section-title{
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+
+  
+  .mybtn1:hover{
+    left: 0;
+    top: 0;
+    font-weight: bolder;
+    background-color: rgb(244, 130, 130);
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  
+.footer{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: black;
+  padding: 44px;
+  text-align: center;
+  margin-top: 33px;
+  font-size: small;
+  background-color: azure;
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Font awesome  -->
+  <link rel="stylesheet" href="./css/fontawesome.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Owl carousel -->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="./css/style.css">
+   <!-- Responsive css -->
+   <link rel="stylesheet" href="./css/responsive.css">
+  <!-- Default skin -->
+  <link rel="stylesheet" href="./css/skins/crimson.css">
+
+    <link rel="stylesheet" href="cart.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+              <!-- Brand -->
+          
+              <a class="nav1"  href="./index.html">
+                <img src="Pictures/myntra.webp" alt="logo" style="width: 100px;">
+                <span class="logo-circle"></span></a>
+<!--             
+              Toggler/collapsibe Button -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <!-- Navbar links -->
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active li" style="color: black;" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active li" style="color: black;"  href="#cart">Cart</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active li" style="color: black;"  href="#contact-item">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div><br><br><br><br><br>
+        <h1>Shopping Cart</h1>
+    </header>
+
+
+
+
+    
+  <section id="cart">
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Rs.<span id="cart-total">0</span></p>
+        <button id="checkout-btn" class="mybtn2">Checkout</button>
+    </div>
+    
+    <div class="products">
+        <h2>Available Products</h2>
+        <ul id="product-list">
+           
+          <li data-id="1" data-name="ROADSTER, Men Casual Cotton Linen Sustainable Shirt" data-price="750.00" class="justify-content-around">
+            <img src="Pictures/product (8).png" style="width: 100px; height: 120px;" alt="">
+            <div class="product-description">
+             <p><b>ROADSTER</b></p>
+             <p style="font-size: small;">Men Casual Cotton Linen Sustainable Shirt</p><br>Rs.750
+         </div>
+            <div class="product-size">
+             <label for="size">Size:</label>
+             <select id="size">
+                 <option value="S">S</option>
+                 <option value="M">M</option>
+                 <option value="L">L</option>
+                 <option value="XL">XL</option>
+                 <option value="XXL">XXL</option>
+             </select>
+         </div>
+             <button class="add-to-cart ">Add to Cart</button>
+         </li>
+
+            <li data-id="2" data-name="CUTIEKINS, Girls Floral Embroidered Sequinned Ready to Wear Lehenga." data-price="1000.00" class="justify-content-around">
+              <img src="Pictures/product (9).png" style="width: 100px; height: 120px;" alt="">
+              <div class="product-description">
+               <p><b>CUTIEKINS</b></p>
+               <p style="font-size: small;">Girls Floral Embroidered Sequinned Ready to Wear Lehenga.</p><br>Rs.1000
+           </div>
+              <div class="product-size">
+               <label for="size">Size:</label>
+               <select id="size">
+                   <option value="S">S</option>
+                   <option value="M">M</option>
+                   <option value="L">L</option>
+                   <option value="XL">XL</option>
+                   <option value="XXL">XXL</option>
+               </select>
+           </div>
+               <button class="add-to-cart ">Add to Cart</button>
+           </li>
+
+            <li data-id="3" data-name="SG YUVRAJ, Boys Ethnic Motif Printed Mandarin Collar Pure Cotton Kurta" data-price="1500.00" class="justify-content-around">
+              <img src="Pictures/product (10).png" style="width: 100px; height: 120px;" alt="">
+              <div class="product-description">
+               <p><b>SG YUVRAJ</b></p>
+               <p style="font-size: small;">Boys Ethnic Motif Printed Mandarin Collar Pure Cotton Kurta</p><br>Rs.1500
+           </div>
+              <div class="product-size">
+               <label for="size">Size:</label>
+               <select id="size">
+                   <option value="S">S</option>
+                   <option value="M">M</option>
+                   <option value="L">L</option>
+                   <option value="XL">XL</option>
+                   <option value="XXL">XXL</option>
+               </select>
+           </div>
+               <button class="add-to-cart ">Add to Cart</button>
+           </li>
+
+            <li data-id="4" data-name="LIBAS, Women Cotton Straight Kurta & Palazzos with Dupatta." data-price="2500.00" class="justify-content-around">
+              <img src="Pictures/product (11).png" style="width: 100px; height: 120px;" alt="">
+              <div class="product-description">
+               <p><b>LIBAS</b></p>
+               <p style="font-size: small;">Women Cotton Straight Kurta & Palazzos with Dupatta</p><br>Rs.2500
+           </div>
+              <div class="product-size">
+               <label for="size">Size:</label>
+               <select id="size">
+                   <option value="S">S</option>
+                   <option value="M">M</option>
+                   <option value="L">L</option>
+                   <option value="XL">XL</option>
+                   <option value="XXL">XXL</option>
+               </select>
+           </div>
+               <button class="add-to-cart ">Add to Cart</button>
+           </li>
+
+            <li data-id="5" data-name="KALINI, Floral Printed Anarkali Pure Cotton Kurta set." data-price="2000.00" class="justify-content-around">
+               <img src="Pictures/product (12).png" style="width: 100px; height: 120px;" alt="">
+               <div class="product-description">
+                <p><b>KALINI</b></p>
+                <p style="font-size: small;">Floral Printed Anarkali Pure Cotton Kurta set</p><br>Rs.2000
+            </div>
+               <div class="product-size">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+                <button class="add-to-cart ">Add to Cart</button>
+            </li>
+    
+            <!-- Add more products here -->
+        </ul>
+    </div>
+  </section>
+
+
+
+
+  
+  <!-- Contact Section Start -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <!-- Section Title Start -->
+          <div class="section-title">
+            <h1 class="title" style="color: #000;">Contact Us</h1>
+            <h2 class="subtitle" style="color: #000;">Please Fill The Following Form</h2>
+          </div>
+          <!-- Section Title End -->
+        </div>
+      </div>
+      <div class="row">
+  
+        <div class="col-md-7">
+          <form class="contact-form">
+            <div class="row">
+  
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Email">
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Subject">
+                </div>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Message"></textarea>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <button type="submit" class="mybtn2" >Send Message</button>
+                </div>
+              </div>
+            </div>
+  
+          </form>
+        </div>
+  
+        <div class="col-md-5 order-first order-md-last">
+          <!-- Contact Item Start -->
+          <div class="contact-item" id="contact-item">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h5>Location</h5>
+            <p>Kothrud, Pune, 31</p>
+          </div>
+          <!-- Contact Item End -->
+  
+           <!-- Contact Item Start -->
+           <div class="contact-item">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h5>E-Mail</h5>
+            <p>sharmistha0312@gmail.com</p>
+          </div>
+          <!-- Contact Item End -->
+  
+          <!-- Contact Item Start -->
+          <div class="contact-item">
+            <div class="icon">
+              <i class="fas fa-phone"></i>
+            </div>
+          </div>
+          <!-- Contact Item End -->
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+  
+  <!-- Footer Section Start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="footer-logo">
+            <a href=""><span class="logo-circle"></span> Myntra </a>
+          </div>
+          <div class="footer-text">
+            <p>Thank You For Visiting Our Website..!</p>
+          </div>
+          <div class="footer-social-links">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Myntra Clone 2024</p>
+        <p>Project Submitted By - Sharmistha Pal</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+  
+  <!-- Jquery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper -->
+  <script src="js/popper.min.js"></script>
+   <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- main -->
+  <script src="js/main.js"></script>
+  <!-- Owl carousel -->
+  <script src="./js/owl.carousel.min.js"></script>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const productList = document.getElementById("product-list");
+    const cartItems = document.getElementById("cart-items");
+    const cartTotal = document.getElementById("cart-total");
+    const checkoutButton = document.getElementById("checkout-btn");
+
+    const products = productList.querySelectorAll("li");
+
+    products.forEach(product => {
+        const addButton = product.querySelector(".add-to-cart");
+        addButton.addEventListener("click", () => {
+            addToCart(product);
+        });
+    });
+
+    let cart = [];
+
+    function addToCart(product) {
+        const productId = product.dataset.id;
+        const productName = product.dataset.name;
+        const productPrice = parseFloat(product.dataset.price);
+
+        const existingItem = cart.find(item => item.id === productId);
+
+        if (existingItem) {
+            existingItem.quantity++;
+        } else {
+            cart.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
+        }
+
+        updateCart();
+    }
+
+    function updateCart() {
+        cartItems.innerHTML = "";
+        let total = 0;
+
+        cart.forEach(item => {
+            const cartItem = document.createElement("li");
+            cartItem.innerText = `${item.name} - Quantity: ${item.quantity} - Rs.${(item.price * item.quantity).toFixed(2)}`;
+            cartItems.appendChild(cartItem);
+
+            total += item.price * item.quantity;
+        });
+
+        cartTotal.innerText = total.toFixed(2);
+    }
+
+    checkoutButton.addEventListener("click", () => {
+        alert("Thank you for your purchase!");
+        cart = [];
+        updateCart();
+    });
+});
+
+    </script>
+</body>
+</html>
